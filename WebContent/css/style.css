@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body {
+	fomt-family:sans-serif;
+	background : linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8)) fixed,
+		url(../img/zakkaya.jpg)
+		fixed;
+
+	background-size: cover;
+
+    margin    :10px;    /* ページ全体のmargin */
+    padding   :10px;    /* ページ全体のpadding */
+    text-align:center;	/* 下記のautoに未対応用のセンタリング */
+
+	width:80%;
+	margin-right: auto;
+	margin-left : auto;
+}
+
+main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	padding: 15px 30px;
+	background: rgba(0,0,0,0.0);
+	color: #fff;
+	text-align: center;
+	width: 300px;
+}
+
+div {
+	margin: 120px 0;
+	text-align: center;
+}
+
+h1 {
+  	position: relative;
+  	padding: 0.25em 1em;
+  	border: solid 2px black;
+  	border-radius: 3px 0 3px 0;
+}
+
+h1:before, h1:after {
+  	content: '';
+  	position: absolute;
+  	width:10px;
+  	height: 10px;
+  	border: solid 2px black;
+  	border-radius: 50%;
+}
+
+h1:after {
+  	top:-12px;
+  	left:-12px;
+}
+
+h1:before {
+  	bottom:-12px;
+  	right:-12px;
+}
+
+p {
+	font-family: Meiryo, "Hiragino Kaku Gothic Pro W3", Courier New, sans-serif;
+	line-height: 1.5;
+	margin-bottom: 25px;
+	color: #fff;
+}
+
+.cp_iptxt {
+	position: relative;
+	width: 100%;
+	margin: 10px 3%;
+}
+.cp_iptxt input[type='text'],input[type='password'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
